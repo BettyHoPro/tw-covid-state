@@ -14,7 +14,7 @@ date_array = np.array( [( date_day0+dt.timedelta(days=i) ).strftime("%m%d") for 
 ### update these 3 quantities daily ###
 #######################################
 daily_tested = np.array( [6534.,8459.,15617.,18178.,17867.,18099.,21875.,14568.,12911.,23608., 25005.] ) #https://data.gov.tw/dataset/120451 May 25 送驗 
-daily_reported_positive = np.array( [185.,276.,510.,414.,468.,435.,402.,402.,384.,376., 281. ] ) #MAY 24 already fix, May 25 not yet correct but include
+daily_reported_positive = np.array( [185.,276.,526.,437.,504.,458.,411.,429.,430.,435., 373., 302. ] ) #MAY 26 correction
 daily_reported_positive_rate = np.array( [5.8,4.4,2.6,2.2,2.1,2.7,2.8,3.4,3.4, ] )*0.01 #covid-19 本土病例 每日採檢陽性率 , May 24 not update yet. 
 daily_reported_total = daily_reported_positive / daily_reported_positive_rate
 
