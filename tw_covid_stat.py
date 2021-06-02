@@ -13,8 +13,8 @@ date_array = np.array( [( date_day0+dt.timedelta(days=i) ).strftime("%m%d") for 
 #######################################
 ### update these 3 quantities daily ###
 #######################################
-daily_tested = np.array( [6534.,8459.,15617.,18178.,17867.,18099.,21875.,14568.,12911.,23608., 25005., 21634., 20512., 15190., 21986., 10267., 20533.] ) #https://od.cdc.gov.tw/eic/covid19/covid19_tw_stats.csv May 31 送驗數字更新 
-daily_reported_positive = np.array( [185.,283.,533.,455.,525.,474.,424.,472.,489.,501., 492., 527., 517., 372., 349., 328., 315., 262. ] ) #Add  June 1,  correction before May 31,
+daily_tested = np.array( [6534.,8459.,15617.,18178.,17867.,18099.,21875.,14568.,12911.,23608., 25005., 21634., 20512., 15190., 21986., 10267., 20533., 28735.] ) #https://od.cdc.gov.tw/eic/covid19/covid19_tw_stats.csv June 1 送驗數字更新 
+daily_reported_positive = np.array( [185.,283.,533.,455.,527.,474.,430.,472.,490.,501., 493., 530., 524., 397., 378., 374., 344., 290., 372. ] ) #Add  June 2,  correction before June 1,
 daily_reported_positive_rate = np.array( [5.8,4.4,2.6,2.2,2.1,2.7,2.8,3.4,3.4, ] )*0.01 #covid-19 本土病例 每日採檢陽性率 , May 24 not update yet. 
 daily_reported_total = daily_reported_positive / daily_reported_positive_rate
 ## https://data.gov.tw/dataset/120451 ##
